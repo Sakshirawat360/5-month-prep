@@ -6,3 +6,5 @@ if(final_s === final_t) return true;
 return false
 }
 console.log(anagram(s = "anagram", t = "gramana"))
+// time complexity - O(nlogn)// because of sorting 
+//space complexity - O(n ) extra memoty used by join('')
