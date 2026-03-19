@@ -80,3 +80,12 @@ if(true){
     var h = 20
 }
 console.log(h); // ye access ho jaiga kuki var function scope hota hai--- mtlb it can be accessable outside the function , 
+
+
+if(true){
+    let a = 10
+    var b = 20
+}
+console.log(a); // output - reference error - becauas let ha block scope can not access outside the function.
+console.log(b);// output - 20, 
+
