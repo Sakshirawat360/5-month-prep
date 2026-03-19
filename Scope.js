@@ -64,4 +64,19 @@ console.log(h);
 //.............................................................................
 
 
+var g = 10
+var g = 20
+console.log(g)
+// var - function scope hota hai,, isliye redeclare mai error nhi deta hai.. or reassigned bhi ho jata hai.. isliye second g ko redeclare krke reassign kiya or print ho gaya. 
 
+if(true){
+    let f = 20
+    console.log(f)
+    // because let block scope hota hai.. or hum isko scope ke andar hi access kr Sakte hain.. nahar nhi/
+}
+
+//interview trick..
+if(true){
+    var h = 20
+}
+console.log(h); // ye access ho jaiga kuki var function scope hota hai--- mtlb it can be accessable outside the function , 

@@ -32,3 +32,14 @@ function first(){ // function first store in memory with its full defination
 }
 first(); 
 //----------------------------------------------------------------------------------------------------------------------
+
+function mohit(){
+    let name = "mohit"
+
+    function inner(){
+        console.log(name)
+    }
+    inner()
+}
+mohit()
+// lexical scope - inner function can access the variable of outer function. 

@@ -16,3 +16,5 @@ function majority(nums){
     return "no majority element"
 }
 console.log(majority([1,1,1,1,2,3,3]));
+// time complexity - O(n)
+//Space Complexity - O(1)
