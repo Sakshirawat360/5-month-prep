@@ -42,4 +42,63 @@ function mohit(){
     inner()
 }
 mohit()
-// lexical scope - inner function can access the variable of outer function. 
+// lexical scope - inner function can access the variable of outer function.
+
+function outer(){
+    let name = "Sakshi"
+
+    function inner(){
+        console.log(name);
+        
+    }
+    inner()
+}
+outer()
+
+function counter(){
+    let count = 0
+
+    return function(){
+        count++
+        console.log(count);
+        
+    }
+
+}
+const countii = counter()
+
+countii()
+countii()
+countii()
+
+//------------------------------------------------
+
+function outer(){
+    let name = "Sakshi"
+
+    function inner(){
+        console.log(name);
+        
+    }
+    inner()
+}
+outer()
+//---------------------------------------------------------------------------------------
+
+function Count(){
+    let cnt = 1
+
+    return function(){
+        cnt++;
+        console.log(cnt);
+        
+    }
+}
+
+const sequence = Count()
+
+sequence()
+sequence()
+sequence()
+sequence()
+sequence()

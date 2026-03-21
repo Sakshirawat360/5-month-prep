@@ -89,3 +89,16 @@ if(true){
 console.log(a); // output - reference error - becauas let ha block scope can not access outside the function.
 console.log(b);// output - 20, 
 
+if(true){
+    var A = 20
+    var A = 30  // although we created Declare A two time lekin memory mai A ek hi bar create hoga.. 
+}
+console.log(A);
+
+
+if(true){
+    let B = 40
+}
+console.log(B);  // output - b is not defined , kuki let block scope hota hai.. hum let ko reassign kr sakte hain , lekin redeclare nhi kar Sakte. or isko Scope ke bahar access bhi nhi kaer Sakte.  
+
+
