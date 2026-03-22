@@ -28,7 +28,7 @@ function saybye(){
 greet("Sakshi", saybye)
 
 //---------------------------------------------------------------------------------------------
-//Real life Example of Callbacks API Simulation
+// Real life Example of Callbacks API Simulation
 
 function fetchdata(call){
     console.log("prrocess data....");
@@ -44,6 +44,18 @@ fetchdata(()=>{
     console.log("almost done");
     
 })
+
+// function fetchdata(){
+//     console.log("processing data...");
+    
+//  return new Promise((resolve, reject)=>{
+//     setTimeout(() => {
+//         resolve("data received")
+//     }, 2000);
+//  })
+// }
+// fetchdata().then(result => console.log(result))
+
 //---------------------------------------------------------------------------
 
 function calculate(a,b, sum){

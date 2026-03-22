@@ -16,7 +16,7 @@ function api2(){
     setTimeout(() => {
         console.log("API2 DONE");
         resolve()
-    }, 1000);
+    }, 2000);
  });
 }
 
@@ -25,7 +25,7 @@ function api3(){
     setTimeout(() => {
         console.log("API3 DONE");
         resolve()
-    }, 1000);
+    }, 3000);
  });
 }
 
