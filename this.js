@@ -1,44 +1,24 @@
+// this keyword = this keyword in javascript refers to the object that is currently executing the code. 
 
-//object mtd
+function sayhello(){
+    console.log("hello" +" " +this.name);
+    
+}
+
+const person = {
+    name: "Sakshi",
+    greet: sayhello
+}
+
+person.greet();
+//-----------------------------------------------------------
 
 const user = {
-    name : "Sakshi",
-    greet: function(){
-        console.log(this.name);
-    }
-}
-user.greet();
+    username: "Sakshi Rawat",
 
-const sakshi = {
-    name: "Anaya",
-    age: 23,
-
-    hello:   function(){
-        console.log(this.name, this.age);
+    regular: function hello(){
+        console.log("hello" + " " + this.username);
         
     }
 }
-sakshi.hello()
-
-const ritika = {
-    name: "Anaya",
-    age: 23,
-
-    hey:   () => {
-        console.log(this.name, this.age);
-        
-    }
-}
-ritika.hey()
-
-const moksh = {
-    name: "Sakshi",
-    sam: function(){
-        const test = () =>{
-            console.log(this.name);
-            
-        }
-        test()
-    }
-}
-moksh.sam()
+user.regular();

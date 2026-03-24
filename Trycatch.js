@@ -6,10 +6,10 @@ function fetchdata(){
             let success = false // promise fail hoga,, 
 
             if(success){
-                console.log("data recived");
+                resolve("data recived");
             }
             else{
-                console.log("API error");
+                reject("API error");
                 
             }
         }, 2000);

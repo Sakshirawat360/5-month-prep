@@ -10,12 +10,24 @@
      <header>
         <h2>Welcome to My webite</h2>
      </header>
+
+     <nav role="navigation">
+        <button aria-label="open manu"> <!-- aria label attribute ko batatai element ka role kya hoga-->
+            ☰
+        </button>
+         <button aria-label="Search">
+            🔍
+        </button>
+         <button aria-label="View Notification">
+            🔔
+        </button>
+     </nav>
      <nav>
-        <a href="#">Home</a>
+        <a href="Form.html">Home</a>
          <a href="#">About SEction</a>
           <a href="#">Contact</a>
      </nav>
-     <main>
+     <main role="main">
         <section>
             <h2>Welcome to My portfolio</h2>
 
@@ -27,6 +39,27 @@
      </main>
 
      <footer>thankyou </footer>
+<br><br>
+<figure>
+     <img src="image/image.jpg" alt="Ai image" width="20%" height="10%">
+     <figcaption style="font-family: cursive; font-size: 20px;">AI Generated image</figcaption>
+</figure>
+     <br><br>
+    <iframe
+     width="560"
+     height="315"
+       src="https://www.youtube.com/embed/ZvbzSrg0afE"
+     title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+<br><br>
+<audio controls> 
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<div tabindex="0">open manu</div>
     <script src="script.js"></script>
     <script src="containsDuplicate.js"></script>
     <script src="Scope.js"></script>

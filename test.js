@@ -35,3 +35,14 @@
 
 // console.log(result);
 
+
+const arr = [1, 2, 3, 4, 5, 6,7]
+
+
+const sum = arr.filter(n=> n%2===1).reduce((acc,curr)=> acc+curr, 0)
+
+console.log(sum);
+
+
+
+
