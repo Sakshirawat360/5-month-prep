@@ -36,12 +36,28 @@
 // console.log(result);
 
 
-const arr = [1, 2, 3, 4, 5, 6,7]
+// const arr = [1, 2, 3, 4, 5, 6,7]
 
 
-const sum = arr.filter(n=> n%2===1).reduce((acc,curr)=> acc+curr, 0)
+// const sum = arr.filter(n=> n%2===1).reduce((acc,curr)=> acc+curr, 0)
 
-console.log(sum);
+// console.log(sum);
+
+const nums = [1,2,3]
+nums.push(4)
+console.log(nums);
+nums.pop()
+console.log(nums);
+nums.shift()
+console.log(nums);
+nums.unshift(2)
+console.log(nums);
+
+const ans = nums.find(n=> n%2 ===0)  // find - it return the first element that matches the condition. 
+console.log(ans);
+
+const answer = nums.findIndex(n=> n%2 ===1)
+console.log(answer);
 
 
 
